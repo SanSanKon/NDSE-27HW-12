@@ -1,0 +1,20 @@
+<%- include('../ports/layout-start', {title: title}) %>
+<%- include('../ports/menu') %>
+
+<form action="/registration" method="post">
+    <div>
+        <label>Имя:</label>
+        <input type="text" name="name" required /><br />
+    </div>
+    <div>
+        <label>E-mail:</label>
+        <input type="email" name="email" required /><br />
+    </div>
+    <div>
+        <label>Пароль:</label>
+        <input type="password" name="password" required />
+    </div>
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+<%- include('../ports/layout-end') %> 
